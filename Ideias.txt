@@ -7,6 +7,7 @@ Teremos que ter basicamente:
 -SQLlite
 -DAO e Repository
 -Geração de logs do sistema para monitoramento e depuração
+-html
 
 Tabelas: 
  -Usuario: 
