@@ -22,11 +22,12 @@ Tabelas:
    -nacionalidade
    -Não sei...
 ----------------------------
--Musica:
+-Playlist:
   -id
   -nome da música
   -nome do artita
-  -categoria da música
+  -categoria da música   
+RELACIONADOS
 ----------------------------
 -Categoria(samba, pagode, gospel, jazz, rock..)
   -id
@@ -49,6 +50,10 @@ playlist do usuario:
 
 *Relacionamento entre tabelas:
 um cantor tem várias músicas (um-para-muitos)
+uma categoria tem várias músicas (um-para-muitos)
+uma música pode ter várias músicas (muitos-para-muitos)
+um usuário tem uma playlist (um-para-um)
+
 
 
 
