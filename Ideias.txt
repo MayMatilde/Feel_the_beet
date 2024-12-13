@@ -1,0 +1,49 @@
+Criaremos uma playlist online, onde podemos adicionar e deletar musicas, filtrar por artista e música, ou seja, usaremos o CRUD 
+
+Teremos que ter basicamente: 
+-Sesseão
+-Cookies
+-flash messages
+-SQLlite
+-DAO e Repository
+-Geração de logs do sistema para monitoramento e depuração
+
+Tabelas: 
+ -Usuario: 
+   -id
+   -Nome
+   -Email
+   -senha(criptografada)
+-----------------------------
+ -Artita: 
+   -id
+   -Nome
+   -Não sei...
+----------------------------
+-Musica:
+  -id
+  -nome da música
+  -nome do artita
+  -categoria da música
+----------------------------
+-Categoria(samba, pagode, gospel, jazz, rock..)
+  -id
+  -nome
+--------------------------------------
+
+Criaremos uma tela de login(cadastro), em que cada o usuário terá sua playlist e assim não entrar na playlist dos outros
+-Tela de login:
+nome
+email
+senha
+
+Resultado:
+ Bem vindo, {usuario}!
+
+playlist do usuario:
+ ->
+ ->
+ ->
+
+
+
