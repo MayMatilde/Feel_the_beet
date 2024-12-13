@@ -47,6 +47,8 @@ playlist do usuario:
  ->
 
 *Relacionamento entre tabelas:
-um cantor tem várias músicas 
+um cantor tem várias músicas (um-para-muitos)
+
+
 
 
