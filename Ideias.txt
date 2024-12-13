@@ -19,6 +19,7 @@ Tabelas:
  -Artita: 
    -id
    -Nome
+   -nacionalidade
    -Não sei...
 ----------------------------
 -Musica:
