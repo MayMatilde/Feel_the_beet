@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Usuário</title>
+</head>
+<body>
+    <!--Formulário de login-->
+    <div class="container">
+        <form action="{{ url_for('music.login') }}" method="POST">
+            <h1>Login do Usuário</h1>
+            <p>Digite seus dados:</p>
+            <label for="username">Nome de usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+            <label for="email">Email do usuário</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <label for="password">Senha do usuário</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha com no mínimo 8 digítos" required>
+            <input type="submit" value="Acessar" class="btn">
+            {% with mensagens = get_flashed_messages(with_categories=True) %}
+                {% if mensagens %}
+                    {% for c, mensagem in mensagens %}
+                        <p class="mensagem {{c}}">{{mensagem}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </form>
+        <a href="{{ url_for('music.index') }}">Voltar</a>
+    </div>
+</body>
+</html>
