@@ -55,6 +55,23 @@ uma música pode ter várias músicas (muitos-para-muitos)
 um usuário tem uma playlist (um-para-um)
 
 
-
-
-
+----crud----
+-create:
+  ->categoria
+  ->playlist
+  ->usuário
+  ->musica
+-read:
+  -> playlist
+  -> musicas
+  -> autor
+  -> usuário, para possivel visualização de meu perfil
+-update:
+ ->categoria
+  ->playlist
+  ->usuário //na teoria, tudo oq eu crio, eu posso editar
+-delete:
+ ->categoria
+  ->playlist
+  ->usuário
+  ->musica //na teoria, tudo oq eu crio, eu posso deletar
