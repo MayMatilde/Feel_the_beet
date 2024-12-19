@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+</head>
+<body>
+    {% if nome_usuario %}
+        <p><a href="{{ url_for('music.index') }}">logout</a></p>
+    {% else %}
+        <h1>Bem-vindo a Feel The Beet, onde cada batida conta uma história</h1>
+        <h2>Comece a sua hoje!</h2>
+        <p><a href="{{ url_for('music.login') }}">Login</a></p>
+    {% endif %}
+</body>
+</html>
