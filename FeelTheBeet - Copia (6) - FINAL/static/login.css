@@ -1,0 +1,114 @@
+/* Fundo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+}
+
+/* Formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.form-login input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-login input[type="text"],
+.form-login input[type="email"],
+.form-login input[type="password"] {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-login input[type="text"]:focus,
+.form-login input[type="email"]:focus,
+.form-login input[type="password"]:focus {
+    outline: none;
+    border-color: #ff007f;
+    box-shadow: 0 0 5px #ff007f;
+}
+
+.form-login .btn {
+    background: linear-gradient(135deg, #00ffcc, #00aaff);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00aaff, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-login .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00aaff, 0 0 30px #00ffcc, 0 0 45px #00ffcc;
+}
+
+/* Mensagens */
+.mensagem {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mensagem.error {
+    background: rgba(255, 0, 0, 0.3);
+    color: #ff0000;
+}
+
+.mensagem.success {
+    background: rgba(0, 255, 0, 0.3);
+    color: #00ff00;
+}
+
+/* Link "Voltar" */
+.button {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #ff6b81, 0 0 20px #ff4757, 0 0 30px #ff4757;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #ff6b81, #ff4757);
+    box-shadow: 0 0 15px #ff6b81, 0 0 30px #ff4757, 0 0 45px #ff4757;
+    transform: scale(1.1);
+}

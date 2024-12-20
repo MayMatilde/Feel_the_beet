@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Usuário</title>
+    <link rel="icon" href="Mr_Beet.png" type="image/x-icon">
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="static/login.css">
+</head>
+<body>
+    <!-- Formulário de cadastro -->
+    <div class="container">
+        <form action="/cadastro" method="POST" class="form-login">
+            <h1 class="title">Cadastro do Usuário</h1>
+            <p class="subtitle">Digite seus dados:</p>
+
+            <!-- Campo de nome de usuário -->
+            <label>Nome de usuário</label>
+            <input type="text" name="username" placeholder="Digite seu nome de usuário" required>
+
+            <!-- Campo de email -->
+            <label >Email do usuário</label>
+            <input type="email" name="email" placeholder="Digite seu email" required>
+
+            <!-- Campo de senha -->
+            <label>Senha do usuário</label>
+            <input type="password" name="password" placeholder="Digite sua senha com no mínimo 8 dígitos" required>
+
+            <!-- Botão de submit -->
+            <input type="submit" value="Acessar" class="btn">
+
+            <!-- Mensagens de erro ou sucesso -->
+            {% with mensagens = get_flashed_messages(with_categories=True) %}
+                {% if mensagens %}
+                    {% for c, mensagem in mensagens %}
+                        <p class="mensagem {{c}}">{{mensagem}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </form>
+
+        <!-- Link para voltar -->
+        <a href="{{ url_for('music.index') }}" class="button">Voltar</a>
+    </div>
+</body>
+</html>
