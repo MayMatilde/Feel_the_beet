@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist do Usuário</title>
+    <link rel="icon" href="Mr_Beet.png" type="image/x-icon">
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="static/playlist.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Boas-vindas -->
+        <h1 class="title">Bem-vindo {{ nome_usuario }}</h1>
+
+        <!--verificar se existe uma playlist-->
+        {% if Playlist %}
+           <!-- Conteúdo da playlist -->
+          <ul class="playlist">
+            <!-- Exemplo de item da playlist -->
+          </ul>
+        {% else %}
+            <h2> Não tem a sua própria playlist?</h2>
+            <h3> Crie a sua agora:</h3>
+            <p><a href="{{ url_for('music.cadastro') }}" class="button">Criar Usuário</a></p>
+        {% endif %}
+
+        <!-- Link de logout -->
+         <h3>Deslogar:</h3>
+        <p><a href="/logout" class="button">Logout</a></p>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Efeito de neon */
+.title, .subtitle {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0), 0 0 10px #ff0080, 0 0 20px #ff007f, 0 0 40px #ff007f;
+}
+
+.title {
+    font-size: 3rem;
+    color: #ffa7e0;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: #ffa7b4;
+    margin-bottom: 40px;
+}
+
+/* Botões */
+.button {
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00ffcc, #00aaff);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00aaff, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00aaff, 0 0 30px #00ffcc, 0 0 45px #00ffcc;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 20px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+body {
+    animation: pulse 10s infinite;
+}

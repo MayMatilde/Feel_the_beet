@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="icon" href="Mr_Beet.png" type="image/x-icon">
+    <!-- Certifique-se de que o caminho abaixo aponta corretamente para o arquivo CSS -->
+    <link rel="stylesheet" href="static/inicio.css">
+</head>
+<body>
+    <div class="container">
+        {% if nome_usuario %}
+            <!-- Botão de logout -->
+            <p><a href="{{ url_for('music.index') }}" class="button">Logout</a></p>
+        {% else %}
+            <!-- Títulos -->
+            <h1 class="title">Bem-vindo a Feel The Beet, onde cada batida conta uma história</h1>
+            <h2 class="subtitle">Comece a sua hoje!</h2>
+            <!-- Botão de login -->
+            <p><a href="{{ url_for('music.login') }}" class="button">Login</a></p>
+        {% endif %}
+    </div>
+</body>
+</html>
